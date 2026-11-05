@@ -6,8 +6,44 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Rehoboth Youth Mission Center</title>
+    <style>
+.site-footer {
+  background-color: #14284c;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 50px;
+}
 
-<style>
+.site-footer h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+
+
 body {
     background-color: #f4f7fb;
     font-family: Arial, sans-serif;
@@ -33,7 +69,7 @@ p {
 
 nav {
   background-color: #123b70;
-  padding: 15px;
+  fdding: 15px;
   text-align: center;
   border-radius: 8px;
 }
@@ -48,24 +84,300 @@ nav a {
 nav a:hover {
   color: #ffd700;
 }
+.welcome {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #176b65;
+    margin-bottom: 30px;
+}
+    
+.join-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #123b65;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.join-button:hover {
+    background-color: #176b65;
+}
+
+
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+    color: #263746;
+    line-height: 1.7;
+}
+
+h1 {
+    color: #123b65;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    color: #176b65;
+    margin-top: 35px;
+}
+
+.hero {
+    background-color: #e8f1fa;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin: 25px auto;
+}
+
+.hero h1 {
+    margin-top: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p, h2 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+   
+.info-card {
+    background-color: #eaf4fb;
+    padding: 25px;
+    border-left: 5px solid #176b65;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+#programs {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.program-card {
+    background-color: #eaf4fb;
+    padding: 25px;
+    border-left: 5px solid #176b65;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.program-card h3 {
+    color: #176b65;
+    margin-top: 0;
+}
+
+
+
+.support-button {
+    display: block;
+    width: fit-content;
+    background-color: #176b65;
+    color: white;
+    padding: 15px 30px;
+    margin: 30px auto;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.support-button:hover {
+    background-color: #124f4b;
+}
+
+
+
+/* Responsive navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 90%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .info-card,
+    .program-card {
+        padding: 15px;
+    }
+}
+
+.menu-toggle {
+  display: none;
+  background: #176b65;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    margin: 15px auto;
+  }
+
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-nav.active {
+    display: flex;
+  }
+}
+/* End of mobile menu CSS */
+
+
+.contact-section h2 {
+  color: #123b70;
+  font-size: 28px;
+}
+
+.contact-card {
+  background: #eaf4fb;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  color: #176b65;
+}
+
+.contact-button {
+  display: inline-block;
+  background: #176b65;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background: #124f4b;
+}
+
+
+
+/* Mobile-friendly footer */
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 30px 15px;
+  }
+
+  .site-footer h2 {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .site-footer p {
+    font-size: 14px;
+  }
+}
 
 </style>
-
-
 </head>
 <body>
 
-<nav>
+
+
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="main-nav">
+  ☰
+</button>
+
+<nav id="main-nav">
   <a href="#home">Home</a>
   <a href="#vision">Our Vision</a>
   <a href="#mission">Our Mission</a>
   <a href="#scripture">Our Scripture</a>
+  <a href="about.html">About Us</a>
+  
+<a href="#programs">Our Programs</a>
+<a href="#get-involved">Get Involved</a>
+<a href="#contact">Contact Us</a>
 </nav>
 
-    <h1 id="home">Rehoboth Youth Mission Center</h1>
 
-    <h2>Raising a Generation of Faith,
-        Hope and Purpose</h2>
+<section class="hero">
+
+    <h1 id="home">Rehoboth Youth Mission Center</h1>
+    <p class="welcome">
+  Raising a Generation of Faith,
+  Hope and Purpose.
+</p>
+
+<a href="mailto:nyangojim11@gmail.com" class="join-button">
+    Get Involved
+</a>
+</section>
+
+    
     <p>
         Welcome to Rehoboth Youth Mission Center.
         We are committed to reaching, discipling,
@@ -73,27 +385,268 @@ nav a:hover {
         through the love of Jesus Christ.
     </p>
 
-    <h2 id="vision">Our Vision</h2>
+    
+
+
+   
+
+<div class="info-card" id="vision">
+    <h2>Our Vision</h2>
     <p>
         To raise a Christ-centered, spiritually mature
         and empowered generation of young people
         who transform their families, communities
         and future generations.
     </p>
+</div>
 
-    <h2 id="mission">Our Mission</h2>
+<div class="info-card" id="mission">
+    <h2>Our Mission</h2>
     <p>
         To reach, disciple, equip and empower young
         people through biblical teaching, evangelism,
         mentorship, leadership development, sports
         and practical life skills.
     </p>
+</div>
 
-    <h2 id="scripture">Our Scripture</h2>
+<div class="info-card" id="scripture">
+    <h2>Our Scripture</h2>
     <p>1 Peter 2:9 — A chosen generation.</p>
-
     <p>Reaching • Discipling • Equipping • Empowering</p>
+</div>
+
+</div>
+
+<!-- Our Programs will go here -->
+
+<section id="programs">
+
+    <h2>Our Programs</h2>
+
+    <div class="program-card">
+        <h3>Youth Evangelism</h3>
+        <p>
+            Sharing the Gospel of Jesus Christ
+            with young people.
+        </p>
+    </div>
+
+<div class="program-card">
+    <h3>Youth Discipleship</h3>
+    <p>
+        Helping young people grow in their
+        relationship with Jesus Christ through
+        Bible study, prayer, mentorship,
+        and spiritual guidance.
+    </p>
+</div>
+
+<div class="program-card">
+    <h3>Mentorship and Life Skills</h3>
+    <p>
+        Guiding young people through biblical
+        mentorship, character development,
+        practical life skills, and personal
+        growth to prepare them for a
+        purposeful future.
+    </p>
+</div>
+
+<div class="program-card">
+    <h3>Leadership Development</h3>
+    <p>
+        Raising Christ-centered young leaders
+        through biblical leadership training,
+        mentorship, responsibility, and
+        opportunities to serve their
+        communities.
+    </p>
+</div>
+
+<div class="program-card">
+    <h3>Sports Outreach</h3>
+    <p>
+        Reaching young people through sports,
+        building friendships, encouraging
+        teamwork, and sharing the Gospel
+        of Jesus Christ.
+    </p>
+</div>
+
+</section>
+
+
+<!-- Get Involved Section -->
+<section id="get-involved">
+    <h2>Get Involved</h2>
+
+    <p>
+        Join us in raising a generation
+        of faith, hope, and purpose.
+        Together, we can make a lasting
+        difference in the lives of
+        young people.
+    </p>
+    
+<div class="program-card">
+    <h3>Volunteer With Us</h3>
+    <p>
+        Join our mission by serving
+        young people through mentorship,
+        evangelism, discipleship,
+        and community outreach.
+    </p>
+</div>
+
+<div class="program-card">
+    <h3>Partner With Us</h3>
+    <p>
+        Partner with Rehoboth Youth Mission
+        Center through prayer, financial
+        support, resources, and collaboration
+        to help transform the lives of
+        young people.
+    </p>
+</div>
+
+<div class="program-card">
+    <h3>Support Our Mission</h3>
+    <p>
+        Your generosity helps us reach,
+        disciple, equip, and empower
+        young people through the love
+        of Jesus Christ.
+    </p>
+</div>
+
+<a href="mailto:nyangojim11@gmail.com"
+   class="support-button">
+    Support Our Mission
+</a>
+
+</section>
+
+const menuLinks = navigation.querySelectorAll("a");
+
+menuLinks.forEach(function(link) {
+  link.addEventListener("click", function() {
+    navigation.classList.remove("active");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute(
+      "aria-label",
+      "Open navigation menu"
+    );
+  });
+});
+
+<script>
+  const menuButton = document.getElementById("menu-toggle");
+  const navigation = document.getElementById("main-nav");
+
+  menuButton.addEventListener("click", function() {
+    navigation.classList.toggle("active");
+
+    const isOpen = navigation.classList.contains("active");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+  });
+</script>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+
+  <h2>Contact Us</h2>
+
+  <p>
+    We would love to hear from you!
+    Whether you want to volunteer,
+    partner with us, request prayer,
+    or support our mission,
+    you are welcome to reach out.
+  </p>
+
+  <div class="contact-card">
+    <h3>Get in Touch</h3>
+
+    <p>
+      Email: nyangojim11@gmail.com
+    </p>
+
+    <a
+      href="mailto:nyangojim11@gmail.com"
+      class="contact-button">
+      Send Us an Email
+    </a>
+  </div>
+
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>
+    We would love to hear from you!
+    Connect with Rehoboth Youth Mission Center
+    for prayer, volunteering, partnerships,
+    and ministry support.
+  </p>
+
+  <a class="contact-button"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=nyangojim11%40gmail.com"
+   target="_blank"
+   rel="noopener noreferrer">
+   Send Email
+</a>
+
+  <div class="contact-card">
+    <h3>WhatsApp Us</h3>
+    <p>Chat directly with our ministry team.</p>
+    <a class="contact-button"
+   href="https://wa.me/254708880308"
+   id="whatsapp-link"
+   target="_blank"
+   rel="noopener noreferrer">
+   Chat on WhatsApp
+</a>
+  </div>
+
+  <div class="contact-card">
+    <h3>Call Us</h3>
+    <p>Speak with us directly.</p>
+    <a class="contact-button"
+       href="tel:+254708880308" id="phone-link">
+      Call Now
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <h2>Rehoboth Youth Mission Center</h2>
+
+  <p>Raising a Generation of Faith,
+  Hope and Purpose.</p>
+
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#vision">Our Vision</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <p>Email: nyangojim11@gmail.com</p>
+  <p>Phone: +254 708 880308</p>
+
+  <p class="copyright">
+    &copy; 2026 Rehoboth Youth Mission Center.
+    All rights reserved.
+  </p>
+</footer>
 
 </body>
-
 </html>
+
+
+
