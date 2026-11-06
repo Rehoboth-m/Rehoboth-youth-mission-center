@@ -6,7 +6,34 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Rehoboth Youth Mission Center</title>
+    
     <style>
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
 .site-footer {
   background-color: #14284c;
   color: white;
@@ -136,21 +163,43 @@ h1 {
     text-align: center;
 }
 
+.hero p {
+    font-size: 19px;
+    color: #345678;
+    line-height: 1.6;
+    margin: 15px auto 25px;
+    max-width: 650px;
+}
+
 h2 {
     color: #176b65;
     margin-top: 35px;
 }
 
 .hero {
-    background-color: #e8f1fa;
+    background-color: #eaf2ff;
     text-align: center;
     padding: 50px 20px;
     border-radius: 12px;
     margin: 25px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .hero h1 {
     margin-top: 0;
+    font-size: 32px;
+    color: #123b70;
+}
+
+
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p, h2 {
+    max-width: 900px;
 }
 
 
@@ -281,15 +330,22 @@ nav {
     margin: 15px auto;
   }
 
-  #main-nav {
+ #main-nav {
     display: none;
     flex-direction: column;
     align-items: center;
-  }
+    gap: 5px;
+}
 
-  #main-nav.active {
+#main-nav a {
+    margin: 0;
+    padding: 8px 12px;
+    line-height: 1.4;
+}
+
+#main-nav.active {
     display: flex;
-  }
+} 
 }
 /* End of mobile menu CSS */
 
@@ -373,7 +429,67 @@ nav {
     font-size: 14px;
   }
 }
+@media (min-width: 768px) {
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+nav a {
+  transition: color 0.3s ease;
+}
 
+nav a:hover {
+  color: #90e0ef;
+}
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    padding: 12px;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+
+.menu-toggle {
+  background-color: #176b95;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  background-color: #14284c;
+}
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background-color: #14284c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.back-to-top:hover {
+    background-color: #2563eb;
+}
+html {
+    scroll-behavior: smooth;
+}
+#main-nav a.active-link {
+  background-color: #ffffff;
+  color: #173b8c;
+  border-radius: 6px;
+}
 </style>
 </head>
 <body>
@@ -568,51 +684,34 @@ nav {
 </section>
 
 
-
 <script>
-  const menuButton = document.getElementById("menu-toggle");
-  const navigation = document.getElementById("main-nav");
+const menuButton = document.getElementById("menu-toggle");
+const navigation = document.getElementById("main-nav");
 
+if (menuButton && navigation) {
   menuButton.addEventListener("click", function() {
-    navigation.classList.toggle("active");
+    const isOpen = navigation.classList.toggle("active");
 
-    const isOpen = navigation.classList.contains("active");
     menuButton.setAttribute("aria-expanded", String(isOpen));
     menuButton.setAttribute(
       "aria-label",
       isOpen ? "Close navigation menu" : "Open navigation menu"
     );
   });
+
+  navigation.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      navigation.classList.remove("active");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+    });
+  });
+}
 </script>
 
 
-<!-- Contact Us Section -->
-<section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <p>
-    We would love to hear from you!
-    Connect with Rehoboth Youth Mission Center
-    for prayer, volunteering, partnerships,
-    and ministry support.
-  </p>
 
-  <a class="contact-button"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=nyangojim11%40gmail.com"
-   target="_blank"
-   rel="noopener noreferrer">
-   Send Email
-</a>
 
-  <div class="contact-card">
-    <h3>WhatsApp Us</h3>
-    <p>Chat directly with our ministry team.</p>
-    <a class="contact-button"
-   href="https://wa.me/254708880308"
-   id="whatsapp-link"
-   target="_blank"
-   rel="noopener noreferrer">
-   Chat on WhatsApp
-</a>
   </div>
 
   <div class="contact-card">
@@ -645,7 +744,9 @@ nav {
     All rights reserved.
   </p>
 </footer>
-
+<a href="#home" class="back-to-top">
+    ↑ Back to Top
+</a>
 </body>
 </html>
 
