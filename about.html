@@ -100,7 +100,14 @@ nav a:hover {
     line-height: 1.7;
   }
 }
-
+/* Highlight the current navigation page */
+nav a[aria-current="page"] {
+    background-color: #ffffff;
+    color: #176b45;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
 </style>
 </head>
 <body>
@@ -108,7 +115,7 @@ nav a:hover {
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
+  <a href="about.html" aria-current="page">About Us</a>
   <a href="programs.html">Our Programs</a>
   <a href="get-involved.html">Get Involved</a>
   <a href="contact.html">Contact Us</a>
