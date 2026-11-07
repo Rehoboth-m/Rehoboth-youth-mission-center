@@ -8,6 +8,16 @@
     <title>Rehoboth Youth Mission Center</title>
     
     <style>
+      
+:root {
+  --navy: #102A43;
+  --royal-blue: #2563EB;
+  --gold: #D4A017;
+  --white: #FFFFFF;
+  --light-bg: #F4F7FB;
+  --text-dark: #243B53;
+}
+
       .hero-subtitle {
     font-size: 22px;
     font-weight: 600;
@@ -118,7 +128,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700;
+ color: var(--gold);
 }
 
 @media (max-width: 600px) {
@@ -235,6 +245,15 @@ p, h2 {
     margin: 20px auto;
     max-width: 900px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    color: #243447;
+font-size: 17px;
+line-height: 1.8;
+}
+.info-card h2 {
+    color: #123b70;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 
@@ -250,13 +269,24 @@ p, h2 {
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
 }
 
 .program-card h3 {
     color: #176b65;
     margin-top: 0;
+    font-size: 22px;
+font-weight: 700;
 }
-
+.program-card p {
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.program-card:hover {
+    transform: translateY(-5px);
+}
 
 
 .support-button {
@@ -499,7 +529,89 @@ html {
   color: #173b8c;
   border-radius: 6px;
 }
+
+h1 {
+  color: var(--navy);
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.9;
+   color: #1e293b;
+   font-weight: 500;
+    text-align: center;
+    background-color: #f0f7ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 12px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-left: 5px solid #2563eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 600px) {
+    .info-card {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .info-card h2 {
+        font-size: 23px;
+    }
+}
+
+.info-card p {
+    color: #334155;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.info-card h2 {
+    color: #173b65;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .intro-text,
+    .info-card {
+        padding: 20px;
+        margin: 15px 10px;
+    }
+
+    .info-card h2 {
+        font-size: 23px;
+    }
+
+    .info-card p,
+    .intro-text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
 </style>
+
+
+
 </head>
 <body>
 
@@ -546,12 +658,17 @@ html {
 </section>
 
     
-    <p>
-        Welcome to Rehoboth Youth Mission Center.
-        We are committed to reaching, discipling,
-        equipping and empowering young people
-        through the love of Jesus Christ.
-    </p>
+   
+<p class="intro-text">
+  Welcome to Rehoboth Youth Mission Center, where faith inspires
+  transformation and every young person has an opportunity to
+  discover their God-given purpose.
+
+  Through biblical discipleship, mentorship, leadership development,
+  and community outreach, we are committed to raising a generation
+  equipped to serve God, influence society, and bring lasting hope
+  to their communities.
+</p>
 
     
 
