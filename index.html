@@ -607,7 +607,14 @@ h1 {
         line-height: 1.7;
     }
 }
-
+/* Highlight the current navigation page */
+#main-nav a[aria-current="page"] {
+    background-color: #ffffff;
+    color: #176b45;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
 </style>
 
 
@@ -627,7 +634,7 @@ h1 {
 </button>
 
 <nav id="main-nav">
-  <a href="index.html">Home</a>
+  <a href="index.html" aria-current="page">Home</a>
   <a href="#vision">Our Vision</a>
   <a href="#mission">Our Mission</a>
   <a href="#scripture">Our Scripture</a>
