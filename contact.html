@@ -125,7 +125,33 @@ nav a[aria-current="page"] {
     border-radius: 6px;
     padding: 8px 12px;
 }
-</style>
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    nav {
+        padding: 12px 5px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
 
 /* Improve text readability */
 body {
@@ -142,17 +168,19 @@ a {
     font-weight: 500;
 }
 
-
+</style>
 </head>
 <body>
-
-<nav class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="programs.html">Our Programs</a>
-  <a href="get-involved.html">Get Involved</a>
-  <a href="contact.html" aria-current="page">Contact Us</a>
+  <nav style="background-color: #1766a9; padding: 15px; text-align: center; border-radius: 8px;">
+  <a href="index.html" style="color: white; margin: 8px;">Home</a>
+  <a href="about.html" style="color: white; margin: 8px;">About Us</a>
+  <a href="programs.html" style="color: white; margin: 8px;">Our Programs</a>
+  <a href="youth-camps.html" style="color: white; margin: 8px;">Youth Camps &amp; Conferences</a>
+  <a href="get-involved.html" style="color: white; margin: 8px;">Get Involved</a>
+  <a href="contact.html" aria-current="page" style="color: #1766a9; margin: 8px;">Contact Us</a>
 </nav>
+   
+
     <h1>Contact Us</h1>
 
     <p>

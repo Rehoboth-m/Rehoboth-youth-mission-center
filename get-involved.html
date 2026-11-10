@@ -14,12 +14,16 @@ nav {
   padding: 15px;
   text-align: center;
   border-radius: 8px;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;
+ margin: 5px 8px;
+padding: 8px 4px;
   font-weight: bold;
   display: inline-block;
 }
@@ -151,6 +155,7 @@ p {
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
   <a href="programs.html">Our Programs</a>
+  <a href="youth-camps.html">Youth Camps &amp; Conferences</a>
   <a href="get-involved.html" aria-current="page">Get Involved</a>
   <a href="contact.html">Contact Us</a>
 </nav>
@@ -245,7 +250,7 @@ p {
 
 <h3>Ways You Can Partner With Us</h3>
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 25px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); justify-content: center; gap: 20px; margin-top: 25px;">
 
   <div style="background: white; padding: 20px; border-radius: 10px; flex: 1 1 220px;">
     <h4>Prayer Partnership</h4>
@@ -267,9 +272,11 @@ p {
 </section>
 
 <footer style="background-color: #1766a9; color: white; text-align: center; padding: 25px; margin-top: 40px; border-radius: 8px;">
-    <p>Rehoboth Youth Mission Center</p>
-    <p>Transforming Lives, Raising Leaders, Building Hope in Christ.</p>
-    <p>&copy; 2026 Rehoboth Youth Mission Center. All Rights Reserved.</p>
+   <p style="font-size: 20px; font-weight: bold; color: white;">Rehoboth Youth Mission Center</p>
+    <p style="font-size: 16px; font-weight: 500; color: white; line-height: 1.6;">
+  Transforming Lives, Raising Leaders, Building Hope in Christ.
+</p>
+    <p style="color: white;">&copy; 2026 Rehoboth Youth Mission Center. All Rights Reserved.</p>
 </footer>
 
 </body>
